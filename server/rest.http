@@ -1,0 +1,86 @@
+GET http://localhost:7777/api/movieData
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0bGphd2hkaWxhbm13bGt
+
+###
+
+GET http://localhost:7777/api/movieData?page=1&limit=5
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0bGphd2hkaWxhbm13bGt
+
+###
+GET http://localhost:7777/api/movieData/62d7097437e7c62061571371
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0bGphd2hkaWxhbm13bGt
+
+###
+GET http://localhost:7777/api/movieData/categories/action?page=1&limit=4
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0bGphd2hkaWxhbm13bGt
+
+###
+POST http://localhost:7777/api/movieData
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbEBnbWFpbC5jb20iLCJpZCI6IjYzMGUzMGM4YjEyZTc2MmNkNzE4MTE4YiIsImlhdCI6MTY2MTg5NjEyMCwiZXhwIjoxNjYxODk2NzIwfQ.d-PTBBZCL0f3jhUQg2g-tpaZU3gPSA8KibUlIOpi_8E
+
+{
+  "title": "Sherlock Holmes anything which the mind of man",
+  "description": "life is infinitely stranger than anything which the mind of man could invent. We would not dare to conceive the things which are really mere commonplaces of existence. If we could fly out of that window hand in hand, hover over this great city, gently remove the roofs, and peep in at the queer things which are going on, the strange coincidences, the plannings, the cross-purposes",
+  "poster": "https://i.pinimg.com/736x/be/1f/44/be1f44e215ecbbeea4fb687c59ab0511.jpg",
+  "urlvideo": "https://www.youtube.com/watch?v=XqZsoesa55w",
+  "metatags":"fdkjvnmkjfdm dkjdfnmkjvm dfkjvndkfj dfkmvofdmv",
+  "category": "action",
+  "duration": "23:45",
+  "views": "23687"
+}
+###
+
+DELETE http://localhost:7777/api/movieData/630e30e1b12e762cd7181190
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbEBnbWFpbC5jb20iLCJpZCI6IjYzMGUzMGM4YjEyZTc2MmNkNzE4MTE4YiIsImlhdCI6MTY2MTg3NDM3NiwiZXhwIjoxNjYxODc0OTc2fQ.n2wPeGrHuH3-s0eD37PM0vEuRNFSoHC9_YbDETgfzIA
+
+###
+POST http://localhost:7777/api/login
+Content-Type: application/json
+
+{
+  "email": "thisisemail@gmail.com",
+  "password": "theQuinnGambitTHRFLSAN98$"
+}
+
+###
+GET http://localhost:7777/api/searchDatas/stranger?page=1&limit=30
+Accept: application/json
+
+###
+POST http://localhost:7777/api/logout
+Content-Type: application/json
+
+###
+POST http://localhost:7777/api/login
+Content-Type: application/json
+
+{
+  "email": "Rafael@gmail.com",
+  "password": "Rafael9797"
+}
+
+###
+GET http://localhost:7777/api/sponsorVastLink
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0bGphd2hkaWxhbm13bGt
+
+###
+POST http://localhost:7777/api/sponsorVastLink
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlJhZmFlbEBnbWFpbC5jb20iLCJpZCI6IjYzMGUzMGM4YjEyZTc2MmNkNzE4MTE4YiIsImlhdCI6MTY2MTg5NzI3OSwiZXhwIjoxNjYxODk3ODc5fQ.XlQ2If66Sw_e2hPG0wxumNS8WK7tw5zeegF3bCfroe8
+
+{
+  "link": "https://www.npmjs.com/package/next-videos"
+}
+###
+GET http://localhost:7777/api/random/action?page=1&limit=2
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0bGphd2hkaWxhbm13bGt
+
+###
